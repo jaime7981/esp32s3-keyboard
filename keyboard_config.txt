@@ -1,0 +1,43 @@
+# DIY Keyboard Configuration
+# Modify this file to match your keyboard's layout and pin configuration
+
+[Keyboard]
+Name = DIY Keyboard
+Manufacturer = Custom
+FirmwareVersion = 1.0.0
+
+[Hardware]
+# GPIO pin numbers for rows
+RowPins = 1,2,3
+
+# GPIO pin numbers for columns
+ColumnPins = 4,5,6
+
+# Diode direction (true = diodes point to rows, false = diodes point to columns)
+DiodesToRows = true
+
+[Timing]
+# Debounce time in milliseconds
+DebounceTime = 5
+
+# Scan interval in milliseconds
+ScanInterval = 10
+
+[Keymap]
+# Format: Row,Column = KeyCode
+# Example 3x3 grid with letters A-I
+0,0 = A
+0,1 = B
+0,2 = C
+1,0 = D
+1,1 = E
+1,2 = F
+2,0 = G
+2,1 = H
+2,2 = I
+
+# Available KeyCodes:
+# Letters: A-Z
+# Numbers: NUM_1 through NUM_0
+# Special: ENTER, ESCAPE, BACKSPACE, TAB, SPACE
+# Modifiers: SHIFT_LEFT, SHIFT_RIGHT, CTRL_LEFT, CTRL_RIGHT, ALT_LEFT, ALT_RIGHT, GUI
